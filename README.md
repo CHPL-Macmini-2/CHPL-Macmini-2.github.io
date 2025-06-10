@@ -1,1 +1,0 @@
-# CHPL-Macmini-2.github.io
