@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhruv CHPL - Portfolio</title>
+    <title>Dhruv CHPL - iOS Developer & Designer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="font-poppins bg-gray-50 text-gray-900">
+<body class="font-montserrat bg-cream-white text-charcoal-gray">
     <!-- Header -->
-    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <header class="fixed top-0 left-0 w-full bg-cream-white shadow-md z-50">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <div>
                 <img src="https://www.fincasys.com/img/chpl_logo.png" alt="CHPL Logo" class="h-12" onerror="this.src='https://via.placeholder.com/150?text=Logo+Not+Found';">
             </div>
             <div class="space-x-6">
-                <a href="#home" class="text-blue-900 font-medium hover:text-red-600 transition duration-300 relative group">
+                <a href="#home" class="text-charcoal-gray font-medium hover:text-soft-gold transition duration-300 relative group">
                     Home
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-600 transition-all duration-300 group-hover:w-full"></span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-soft-gold transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#projects" class="text-blue-900 font-medium hover:text-red-600 transition duration-300 relative group">
+                <a href="#skills" class="text-charcoal-gray font-medium hover:text-soft-gold transition duration-300 relative group">
+                    Skills
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-soft-gold transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#projects" class="text-charcoal-gray font-medium hover:text-soft-gold transition duration-300 relative group">
                     Projects
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-600 transition-all duration-300 group-hover:w-full"></span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-soft-gold transition-all duration-300 group-hover:w-full"></span>
                 </a>
             </div>
         </nav>
@@ -30,82 +34,104 @@
     <!-- Hero Section -->
     <section id="home" class="min-h-screen flex items-center justify-center pt-20">
         <div class="relative w-full h-full">
-            <!-- Diagonal Background -->
-            <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-white clip-path-diagonal"></div>
+            <!-- Gradient Background -->
+            <div class="absolute inset-0 bg-gradient-to-br from-emerald-green to-cream-white"></div>
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between py-16">
                 <!-- Left: Introduction -->
-                <div class="md:w-1/2 text-center md:text-left animate-fade-in">
-                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Dhruv CHPL</h1>
-                    <p class="text-xl md:text-2xl text-red-600 font-semibold mb-4">Senior iOS Developer</p>
-                    <p class="text-lg text-gray-200 mb-6 max-w-md mx-auto md:mx-0">Crafting innovative and seamless mobile applications with a passion for technology and user experience.</p>
-                    <a href="#projects" class="inline-block bg-red-600 text-white font-semibold py-3 px-8 rounded-full hover:bg-blue-900 transition duration-300 shadow-lg">View My Work</a>
+                <div class="md:w-1/2 text-center md:text-left animate-slide-in-left">
+                    <h1 class="text-4xl md:text-5xl font-bold text-cream-white mb-4">Dhruv CHPL</h1>
+                    <p class="text-xl md:text-2xl text-soft-gold font-semibold mb-2">Senior iOS Developer & Designer</p>
+                    <p class="text-lg text-cream-white mb-4 italic">Specializing in crafting beautifully designed iPhone apps</p>
+                    <p class="text-lg text-cream-white mb-6 max-w-md mx-auto md:mx-0">I combine technical expertise in iOS development with a passion for creating visually stunning and user-friendly app designs.</p>
+                    <a href="#projects" class="inline-block bg-soft-gold text-charcoal-gray font-semibold py-3 px-8 rounded-full hover:bg-emerald-green hover:text-cream-white transition duration-300 shadow-lg shimmer">Explore My Designs</a>
                 </div>
                 <!-- Right: Profile Image -->
-                <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center animate-fade-in">
+                <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center animate-slide-in-right">
                     <div class="relative">
-                        <img src="https://avatars.githubusercontent.com/u/131862763?s=400&u=07374720f69a50abf3e9582cab8c171a502da552&v=4" alt="Profile Image" class="w-64 h-64 rounded-full object-cover border-4 border-white shadow-xl transform hover:scale-105 transition duration-500" onerror="this.src='https://via.placeholder.com/150?text=Profile+Not+Found';">
-                        <div class="absolute inset-0 rounded-full border-4 border-blue-900 border-opacity-30"></div>
+                        <img src="https://avatars.githubusercontent.com/u/131862763?s=400&u=07374720f69a50abf3e9582cab8c171a502da552&v=4" alt="Profile Image" class="w-64 h-64 rounded-full object-cover border-4 border-soft-gold shadow-xl transform hover:scale-105 transition duration-500" onerror="this.src='https://via.placeholder.com/150?text=Profile+Not+Found';">
+                        <div class="absolute inset-0 rounded-full border-4 border-emerald-green border-opacity-30"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light-gray py-16">
+        <h2 class="text-4xl font-bold text-center text-emerald-green mb-12">My Skills</h2>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Skill 1: iOS Development -->
+                <div class="bg-cream-white rounded-lg shadow-lg p-6 text-center transform hover:scale-105 transition duration-300">
+                    <h3 class="text-xl font-semibold text-emerald-green mb-2">iOS Development</h3>
+                    <p class="text-sm text-charcoal-gray">Expert in Swift and SwiftUI for building robust iPhone apps.</p>
+                </div>
+                <!-- Skill 2: UI/UX Design -->
+                <div class="bg-cream-white rounded-lg shadow-lg p-6 text-center transform hover:scale-105 transition duration-300">
+                    <h3 class="text-xl font-semibold text-emerald-green mb-2">UI/UX Design</h3>
+                    <p class="text-sm text-charcoal-gray">Creating intuitive and visually appealing app interfaces.</p>
+                </div>
+                <!-- Skill 3: Prototyping -->
+                <div class="bg-cream-white rounded-lg shadow-lg p-6 text-center transform hover:scale-105 transition duration-300">
+                    <h3 class="text-xl font-semibold text-emerald-green mb-2">Prototyping</h3>
+                    <p class="text-sm text-charcoal-gray">Skilled in Figma and Sketch for designing app prototypes.</p>
+                </div>
+                <!-- Skill 4: App Optimization -->
+                <div class="bg-cream-white rounded-lg shadow-lg p-6 text-center transform hover:scale-105 transition duration-300">
+                    <h3 class="text-xl font-semibold text-emerald-green mb-2">App Optimization</h3>
+                    <p class="text-sm text-charcoal-gray">Ensuring apps are fast, responsive, and user-friendly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
-    <section id="projects" class="bg-gray-100 py-16">
-        <h2 class="text-4xl font-bold text-center text-blue-900 mb-12">My Projects</h2>
+    <section id="projects" class="bg-light-gray py-16">
+        <h2 class="text-4xl font-bold text-center text-emerald-green mb-12">My Projects</h2>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Project 1: Zoobiz -->
-                <div class="relative bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition duration-500 group">
-                    <div class="relative">
-                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/be/e2/ed/bee2ed9a-099f-8202-91cf-5a2b0dba47cf/AppIcon-0-0-1x_U007emarketing-0-5-0-sRGB-85-220.png/1024x1024bb.png" alt="Zoobiz" class="w-full h-48 object-contain bg-gray-50 p-4">
-                        <div class="absolute inset-0 bg-blue-900 bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                            <a href="https://apps.apple.com/in/app/zoobiz/id1550560836" class="bg-red-600 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-900 transition duration-300">View Project</a>
-                        </div>
+                <div class="relative bg-cream-white rounded-lg shadow-lg overflow-hidden transform hover:rotate-2 hover:shadow-2xl transition duration-500 group">
+                    <div class="relative border-b-4 border-soft-gold">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/be/e2/ed/bee2ed9a-099f-8202-91cf-5a2b0dba47cf/AppIcon-0-0-1x_U007emarketing-0-5-0-sRGB-85-220.png/1024x1024bb.png" alt="Zoobiz" class="w-full h-48 object-contain bg-cream-white p-4">
                     </div>
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-semibold text-blue-900">Zoobiz</h3>
-                        <p class="text-sm text-gray-600">A dynamic app for business networking and growth.</p>
+                        <h3 class="text-xl font-semibold text-emerald-green">Zoobiz</h3>
+                        <p class="text-sm text-charcoal-gray mb-4">Designed a sleek, user-friendly interface for business networking.</p>
+                        <a href="https://apps.apple.com/in/app/zoobiz/id1550560836" class="inline-block bg-emerald-green text-cream-white font-semibold py-2 px-4 rounded-full hover:bg-soft-gold hover:text-charcoal-gray transition duration-300 shimmer">View Project</a>
                     </div>
                 </div>
                 <!-- Project 2: FOSTTA -->
-                <div class="relative bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition duration-500 group">
-                    <div class="relative">
-                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/44/c6/44/44c64402-e86c-3754-9dee-7a21147bda93/AppIcon-0-0-1x_U007emarketing-0-7-0-sRGB-85-220.png/1024x1024bb.png" alt="FOSTTA" class="w-full h-48 object-contain bg-gray-50 p-4">
-                        <div class="absolute inset-0 bg-blue-900 bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                            <a href="https://apps.apple.com/in/app/fostta-forum/id6670242256" class="bg-red-600 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-900 transition duration-300">View Project</a>
-                        </div>
+                <div class="relative bg-cream-white rounded-lg shadow-lg overflow-hidden transform hover:rotate-2 hover:shadow-2xl transition duration-500 group">
+                    <div class="relative border-b-4 border-soft-gold">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/44/c6/44/44c64402-e86c-3754-9dee-7a21147bda93/AppIcon-0-0-1x_U007emarketing-0-7-0-sRGB-85-220.png/1024x1024bb.png" alt="FOSTTA" class="w-full h-48 object-contain bg-cream-white p-4">
                     </div>
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-semibold text-blue-900">FOSTTA</h3>
-                        <p class="text-sm text-gray-600">A forum app for community engagement.</p>
+                        <h3 class="text-xl font-semibold text-emerald-green">FOSTTA</h3>
+                        <p class="text-sm text-charcoal-gray mb-4">Crafted an engaging design for a community forum app.</p>
+                        <a href="https://apps.apple.com/in/app/fostta-forum/id6670242256" class="inline-block bg-emerald-green text-cream-white font-semibold py-2 px-4 rounded-full hover:bg-soft-gold hover:text-charcoal-gray transition duration-300 shimmer">View Project</a>
                     </div>
                 </div>
                 <!-- Project 3: Myco -->
-                <div class="relative bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition duration-500 group">
-                    <div class="relative">
-                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2a/87/90/2a879064-1582-4a17-c322-ec0ff3882f03/AppIcon-0-0-1x_U007ephone-0-1-0-sRGB-85-220.png/1024x1024bb.png" alt="Myco" class="w-full h-48 object-contain bg-gray-50 p-4">
-                        <div class="absolute inset-0 bg-blue-900 bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                            <a href="https://apps.apple.com/in/app/myco-your-business-app/id1570587985" class="bg-red-600 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-900 transition duration-300">View Project</a>
-                        </div>
+                <div class="relative bg-cream-white rounded-lg shadow-lg overflow-hidden transform hover:rotate-2 hover:shadow-2xl transition duration-500 group">
+                    <div class="relative border-b-4 border-soft-gold">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2a/87/90/2a879064-1582-4a17-c322-ec0ff3882f03/AppIcon-0-0-1x_U007ephone-0-1-0-sRGB-85-220.png/1024x1024bb.png" alt="Myco" class="w-full h-48 object-contain bg-cream-white p-4">
                     </div>
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-semibold text-blue-900">Myco</h3>
-                        <p class="text-sm text-gray-600">A business management app for entrepreneurs.</p>
+                        <h3 class="text-xl font-semibold text-emerald-green">Myco</h3>
+                        <p class="text-sm text-charcoal-gray mb-4">Designed a modern UI for business management on iPhone.</p>
+                        <a href="https://apps.apple.com/in/app/myco-your-business-app/id1570587985" class="inline-block bg-emerald-green text-cream-white font-semibold py-2 px-4 rounded-full hover:bg-soft-gold hover:text-charcoal-gray transition duration-300 shimmer">View Project</a>
                     </div>
                 </div>
                 <!-- Project 4: My Association -->
-                <div class="relative bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition duration-500 group">
-                    <div class="relative">
-                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/22/bf/f8/22bff832-9304-5477-39a1-a26313e5c1a1/AppIcon-0-0-1x_U007emarketing-0-7-0-0-sRGB-85-220.png/1024x1024bb.png" alt="My Association" class="w-full h-48 object-contain bg-gray-50 p-4">
-                        <div class="absolute inset-0 bg-blue-900 bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                            <a href="https://apps.apple.com/in/app/my-association-app/id1565765469" class="bg-red-600 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-900 transition duration-300">View Project</a>
-                        </div>
+                <div class="relative bg-cream-white rounded-lg shadow-lg overflow-hidden transform hover:rotate-2 hover:shadow-2xl transition duration-500 group">
+                    <div class="relative border-b-4 border-soft-gold">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/22/bf/f8/22bff832-9304-5477-39a1-a26313e5c1a1/AppIcon-0-0-1x_U007emarketing-0-7-0-0-sRGB-85-220.png/1024x1024bb.png" alt="My Association" class="w-full h-48 object-contain bg-cream-white p-4">
                     </div>
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-semibold text-blue-900">My Association</h3>
-                        <p class="text-sm text-gray-600">An app for managing association activities.</p>
+                        <h3 class="text-xl font-semibold text-emerald-green">My Association</h3>
+                        <p class="text-sm text-charcoal-gray mb-4">Created an intuitive design for association management.</p>
+                        <a href="https://apps.apple.com/in/app/my-association-app/id1565765469" class="inline-block bg-emerald-green text-cream-white font-semibold py-2 px-4 rounded-full hover:bg-soft-gold hover:text-charcoal-gray transition duration-300 shimmer">View Project</a>
                     </div>
                 </div>
             </div>
@@ -113,34 +139,69 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-blue-900 text-white text-center py-6">
+    <footer class="bg-emerald-green text-cream-white text-center py-6">
         <p class="mb-2">© 2025 Dhruv CHPL. All rights reserved.</p>
         <div class="flex justify-center space-x-4">
-            <a href="https://linkedin.com" class="text-white hover:text-red-600 transition duration-300">LinkedIn</a>
-            <a href="https://github.com" class="text-white hover:text-red-600 transition duration-300">GitHub</a>
-            <a href="https://twitter.com" class="text-white hover:text-red-600 transition duration-300">Twitter</a>
+            <a href="https://linkedin.com" class="text-cream-white hover:text-soft-gold transition duration-300">LinkedIn</a>
+            <a href="https://github.com" class="text-cream-white hover:text-soft-gold transition duration-300">GitHub</a>
+            <a href="https://twitter.com" class="text-cream-white hover:text-soft-gold transition duration-300">Twitter</a>
+            <a href="mailto:your-email@example.com" class="text-cream-white hover:text-soft-gold transition duration-300">Contact Me</a>
         </div>
     </footer>
 
     <!-- Custom Styles -->
     <style>
+        /* Custom Colors */
+        :root {
+            --emerald-green: #047857;
+            --soft-gold: #D4AF37;
+            --cream-white: #FDFBF7;
+            --charcoal-gray: #333333;
+            --light-gray: #E5E7EB;
+        }
+
+        /* Apply Colors */
+        .bg-emerald-green { background-color: var(--emerald-green); }
+        .bg-soft-gold { background-color: var(--soft-gold); }
+        .bg-cream-white { background-color: var(--cream-white); }
+        .bg-light-gray { background-color: var(--light-gray); }
+        .text-emerald-green { color: var(--emerald-green); }
+        .text-soft-gold { color: var(--soft-gold); }
+        .text-cream-white { color: var(--cream-white); }
+        .text-charcoal-gray { color: var(--charcoal-gray); }
+        .border-soft-gold { border-color: var(--soft-gold); }
+        .border-emerald-green { border-color: var(--emerald-green); }
+
         /* Font */
-        .font-poppins {
-            font-family: 'Poppins', sans-serif;
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
         }
 
-        /* Diagonal Clip Path for Hero Background */
-        .clip-path-diagonal {
-            clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+        /* Slide-In Animations */
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .animate-slide-in-left {
+            animation: slideInLeft 1s ease-in-out;
+        }
+        .animate-slide-in-right {
+            animation: slideInRight 1s ease-in-out;
         }
 
-        /* FadeIn Animation */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        /* Shimmer Effect for Buttons */
+        @keyframes shimmer {
+            0% { background-position: -468px 0; }
+            100% { background-position: 468px 0; }
         }
-        .animate-fade-in {
-            animation: fadeIn 1s ease-in-out;
+        .shimmer {
+            background: linear-gradient(to right, var(--soft-gold) 8%, #e5d5a3 18%, var(--soft-gold) 33%);
+            background-size: 800px 104px;
+            animation: shimmer 2s infinite linear;
         }
     </style>
 </body>
