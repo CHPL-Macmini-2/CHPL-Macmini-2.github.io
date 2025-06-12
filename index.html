@@ -31,27 +31,34 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center pt-20">
-        <div class="relative w-full h-full">
-            <!-- Gradient Background -->
-            <div class="absolute inset-0 bg-gradient-to-br from-emerald-green to-cream-white"></div>
-            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between py-16">
-                <!-- Left: Introduction -->
-                <div class="md:w-1/2 text-center md:text-left animate-slide-in-left">
-                    <h1 class="text-4xl md:text-5xl font-bold text-cream-white mb-4">Dhruv CHPL</h1>
-                    <p class="text-xl md:text-2xl text-soft-gold font-semibold mb-2">Senior iOS Developer & Designer</p>
-                    <p class="text-lg text-cream-white mb-4 italic">Specializing in crafting beautifully designed iPhone apps</p>
-                    <p class="text-lg text-cream-white mb-6 max-w-md mx-auto md:mx-0">I combine technical expertise in iOS development with a passion for creating visually stunning and user-friendly app designs.</p>
+    <!-- Hero Section (Redesigned) -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 bg-cream-white relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10 bg-pattern"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+            <!-- Profile Image -->
+            <div class="mb-8 animate-zoom-in">
+                <div class="relative inline-block">
+                    <img src="https://avatars.githubusercontent.com/u/131862763?s=400&u=07374720f69a50abf3e9582cab8c171a502da552&v=4" alt="Profile Image" class="w-72 h-72 rounded-full object-cover border-4 border-soft-gold shadow-xl transform hover:scale-105 transition duration-500" onerror="this.src='https://via.placeholder.com/150?text=Profile+Not+Found';">
+                    <div class="absolute inset-0 rounded-full border-4 border-emerald-green border-opacity-30 hover:border-soft-gold hover:border-opacity-50 transition duration-500"></div>
+                </div>
+            </div>
+            <!-- Introduction -->
+            <div class="animate-fade-in">
+                <h1 class="text-4xl md:text-5xl font-bold text-emerald-green mb-2 relative inline-block">
+                    Dhruv CHPL
+                    <span class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-green to-soft-gold rounded-full"></span>
+                </h1>
+                <p class="text-xl md:text-2xl text-soft-gold font-semibold mb-2">Senior iOS Developer & Designer</p>
+                <p class="text-lg text-charcoal-gray mb-4 italic">Specializing in crafting beautifully designed iPhone apps</p>
+                <p class="text-lg text-charcoal-gray mb-6 max-w-2xl mx-auto">I combine technical expertise in iOS development with a passion for creating visually stunning and user-friendly app designs that elevate the iPhone experience.</p>
+                <!-- CTAs -->
+                <div class="flex justify-center space-x-4">
                     <a href="#projects" class="inline-block bg-soft-gold text-charcoal-gray font-semibold py-3 px-8 rounded-full hover:bg-emerald-green hover:text-cream-white transition duration-300 shadow-lg shimmer">Explore My Designs</a>
+                    <a href="https://example.com/resume.pdf" class="inline-block bg-emerald-green text-cream-white font-semibold py-3 px-8 rounded-full hover:bg-soft-gold hover:text-charcoal-gray transition duration-300 shadow-lg shimmer">Download Resume</a>
                 </div>
-                <!-- Right: Profile Image -->
-                <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center animate-slide-in-right">
-                    <div class="relative">
-                        <img src="https://avatars.githubusercontent.com/u/131862763?s=400&u=07374720f69a50abf3e9582cab8c171a502da552&v=4" alt="Profile Image" class="w-64 h-64 rounded-full object-cover border-4 border-soft-gold shadow-xl transform hover:scale-105 transition duration-500" onerror="this.src='https://via.placeholder.com/150?text=Profile+Not+Found';">
-                        <div class="absolute inset-0 rounded-full border-4 border-emerald-green border-opacity-30"></div>
-                    </div>
-                </div>
+                <!-- Featured Badge -->
+                <p class="mt-6 text-sm text-charcoal-gray">Featured on the <span class="text-soft-gold font-semibold">App Store</span></p>
             </div>
         </div>
     </section>
@@ -177,20 +184,25 @@
             font-family: 'Montserrat', sans-serif;
         }
 
-        /* Slide-In Animations */
-        @keyframes slideInLeft {
-            from { opacity: 0; transform: translateX(-50px); }
-            to { opacity: 1; transform: translateX(0); }
+        /* Background Pattern */
+        .bg-pattern {
+            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80"%3E%3Cpath fill="%23047857" fill-opacity="0.1" d="M0 0h40v40H0zm40 40h40v40H40z"%3E%3C/path%3E%3C/svg%3E');
         }
-        @keyframes slideInRight {
-            from { opacity: 0; transform: translateX(50px); }
-            to { opacity: 1; transform: translateX(0); }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
-        .animate-slide-in-left {
-            animation: slideInLeft 1s ease-in-out;
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
         }
-        .animate-slide-in-right {
-            animation: slideInRight 1s ease-in-out;
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        .animate-zoom-in {
+            animation: zoomIn 1s ease-in-out;
         }
 
         /* Shimmer Effect for Buttons */
