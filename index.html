@@ -52,21 +52,21 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center pt-20 relative">
+    <section id="home" class="min-h-screen flex items-center pt-20 relative bg-gradient-to-br from-light-gray to-soft-apricot bg-opacity-50" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27100%27 height=%27100%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 fill=%27none%27/%3E%3Cg opacity=%270.1%27%3E%3Ccircle cx=%2750%27 cy=%2750%27 r=%2740%27 fill=%27%23FAD7A0%27/%3E%3Ccircle cx=%2720%27 cy=%2720%27 r=%2720%27 fill=%27%23F7F7F7%27/%3E%3Ccircle cx=%2780%27 cy=%2780%27 r=%2720%27 fill=%27%23FAD7A0%27/%3E%3C/g%3E%3C/svg%3E'); background-size: cover; background-position: center;">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center relative z-10">
             <!-- Text Content -->
             <div class="order-1 text-center lg:text-left">
-                <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100 max-w-md mx-auto lg:mx-0 hover:shadow-2xl transition-shadow duration-300">
-                    <h1 class="text-4xl sm:text-5xl font-bold text-deep-charcoal mb-4 animate-slide-up">Dhruv CHPL</h1>
-                    <p class="text-xl sm:text-2xl text-crimson-red font-semibold mb-4 animate-slide-up delay-100">SDE-1 (iOS Developer - Swift, SwiftUI, UIKit, Figma)</p>
+                <div class="bg-white bg-opacity-95 backdrop-blur-md p-6 sm:p-8 lg:p-10 rounded-2xl shadow-2xl border border-soft-apricot border-opacity-20 max-w-lg mx-auto lg:mx-0 hover:shadow-3xl transition-shadow duration-300">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-deep-charcoal mb-4 animate-slide-up">Dhruv CHPL</h1>
+                    <p class="text-lg sm:text-xl lg:text-2xl text-crimson-red font-semibold mb-4 animate-slide-up delay-100">SDE-1 (iOS Developer - Swift, SwiftUI, UIKit, Figma)</p>
                     <p class="text-base sm:text-lg text-charcoal-gray max-w-md mb-6 animate-slide-up delay-200">Crafting innovative iOS apps with a blend of cutting-edge technology, stunning design, and seamless communication.</p>
                     <div class="flex flex-wrap gap-2 mb-6 justify-center lg:justify-start animate-slide-up delay-200">
-                        <span class="text-xs text-charcoal-gray bg-gray-100 px-3 py-1 rounded-full">Swift</span>
-                        <span class="text-xs text-charcoal-gray bg-gray-100 px-3 py-1 rounded-full">SwiftUI</span>
-                        <span class="text-xs text-charcoal-gray bg-gray-100 px-3 py-1 rounded-full">UIKit</span>
-                        <span class="text-xs text-charcoal-gray bg-gray-100 px-3 py-1 rounded-full">Figma</span>
-                        <span class="text-xs text-charcoal-gray bg-gray-100 px-3 py-1 rounded-full">Sketch</span>
-                        <span class="text-xs text-charcoal-gray bg-gray-100 px-3 py-1 rounded-full">App Optimization</span>
+                        <span class="text-xs sm:text-sm text-charcoal-gray bg-gray-100 px-3 py-1 rounded-full">Swift</span>
+                        <span class="text-xs sm:text-sm text-charcoal-gray bg-gray-100 px-3 py-1 rounded-full">SwiftUI</span>
+                        <span class="text-xs sm:text-sm text-charcoal-gray bg-gray-100 px-3 py-1 rounded-full">UIKit</span>
+                        <span class="text-xs sm:text-sm text-charcoal-gray bg-gray-100 px-3 py-1 rounded-full">Figma</span>
+                        <span class="text-xs sm:text-sm text-charcoal-gray bg-gray-100 px-3 py-1 rounded-full">Sketch</span>
+                        <span class="text-xs sm:text-sm text-charcoal-gray bg-gray-100 px-3 py-1 rounded-full">App Optimization</span>
                     </div>
                     <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start animate-slide-up delay-300">
                         <a href="#projects" class="inline-block bg-crimson-red text-white font-semibold py-2 sm:py-3 px-6 sm:px-8 rounded-full hover:bg-deep-charcoal hover:text-white transition duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1">Explore My Work</a>
@@ -77,7 +77,7 @@
             <!-- Profile Image -->
             <div class="order-2 flex justify-center lg:justify-end">
                 <div class="relative inline-block">
-                    <img src="https://avatars.githubusercontent.com/u/131862763?s=400&u=07374720f69a50abf3e9582cab8c171a502da552&v=4" alt="Profile Image" class="relative w-28 h-28 md:w-36 md:h-36 rounded-full object-cover border-4 border-white shadow-xl animate-scale-in z-10" onerror="this.src='https://via.placeholder.com/150?text=Profile+Not+Found';">
+                    <img src="https://avatars.githubusercontent.com/u/131862763?s=400&u=07374720f69a50abf3e9582cab8c171a502da552&v=4" alt="Profile Image" class="relative w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 rounded-full object-cover border-4 border-white shadow-xl animate-scale-in z-10" onerror="this.src='https://via.placeholder.com/150?text=Profile+Not+Found';">
                 </div>
             </div>
         </div>
@@ -337,6 +337,13 @@
         /* Smooth Scroll */
         html {
             scroll-behavior: smooth;
+        }
+
+        /* Responsive Adjustments for Large Screens */
+        @media (min-width: 1024px) {
+            .max-w-lg {
+                max-width: 32rem;
+            }
         }
     </style>
 </body>
