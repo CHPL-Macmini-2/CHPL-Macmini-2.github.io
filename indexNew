@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhruv CHPL – iOS Developer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-bg {
+      background: linear-gradient(135deg, #e3e8ee 0%, #b6c4e0 40%, #7f9fc9 100%);
+    }
+    .glass {
+      background: rgba(255,255,255,0.90);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+      backdrop-filter: blur(8px);
+      border-radius: 1.5rem;
+      border: 1.5px solid rgba(127,159,201,0.09);
+    }
+    .neon {
+  text-shadow: 0 1px 4px #b6c4e0, 0 0 8px #e3e8ee;
+    }
+    .bounce {
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0);}
+      50% { transform: translateY(-10px);}
+    }
+    .fade-in-up {
+      animation: fadeInUp 1.2s cubic-bezier(.39,.575,.565,1) both;
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(40px);}
+      100% { opacity: 1; transform: translateY(0);}
+    }
+    .glow-hover:hover {
+      box-shadow: 0 0 16px 2px #4bb0a9, 0 0 32px 4px #b6c4e0;
+      transition: box-shadow 0.3s;
+    }
+    .animated-underline {
+      position: relative;
+      display: inline-block;
+    }
+    .animated-underline::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #4bb0a9 0%, #7f9fc9 100%);
+      transition: width .3s;
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+    }
+    .animated-underline:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body class="gradient-bg min-h-screen text-gray-900 overflow-x-hidden">
+
+  <!-- NAVBAR -->
+  <header class="fixed w-full z-50 bg-white/70 backdrop-blur-lg shadow-lg">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="https://www.fincasys.com/img/chpl_logo.png" alt="Logo" class="h-10 rounded-full border-2 border-blue-600 shadow-md" />
+        <span class="font-bold text-xl text-blue-700 neon tracking-wide">Dhruv CHPL</span>
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="#home" class="animated-underline font-semibold text-blue-700 hover:text-teal-600 transition">Home</a>
+        <a href="#about" class="animated-underline font-semibold text-blue-700 hover:text-teal-600 transition">About</a>
+        <a href="#skills" class="animated-underline font-semibold text-blue-700 hover:text-teal-600 transition">Skills</a>
+        <a href="#projects" class="animated-underline font-semibold text-blue-700 hover:text-teal-600 transition">Projects</a>
+        <a href="#contact" class="animated-underline font-semibold text-blue-700 hover:text-teal-600 transition">Contact</a>
+      </div>
+      <a href="mailto:your-email@example.com" class="ml-4 px-4 py-2 bg-teal-600 text-white rounded-full font-semibold shadow-lg hover:bg-blue-800 transition glow-hover">Let's Connect</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="pt-32 pb-16 flex flex-col items-center justify-center min-h-screen">
+    <div class="glass px-10 py-12 flex flex-col md:flex-row items-center gap-10 fade-in-up">
+      <div class="flex-shrink-0">
+        <img src="https://avatars.githubusercontent.com/u/131862763?s=400&u=07374720f69a50abf3e9582cab8c171a502da552&v=4"
+             alt="Profile"
+             class="rounded-full w-40 h-40 border-4 border-blue-600 shadow-2xl bounce"
+             style="object-fit: cover;">
+      </div>
+      <div class="text-center md:text-left">
+        <h1 class="text-5xl font-bold text-blue-800 neon mb-2">Dhruv CHPL</h1>
+        <p class="text-2xl font-semibold text-teal-600 mb-3 tracking-wide">iOS Developer & Designer</p>
+        <p class="text-gray-700 mb-6 max-w-lg">Building delightful iOS experiences with <span class="font-semibold text-blue-800">Swift</span>, <span class="font-semibold text-blue-800">SwiftUI</span>, and UI/UX magic. Passionate about performance, design, and seamless user journeys.</p>
+        <div class="flex flex-wrap gap-2 justify-center md:justify-start mb-6">
+          <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-800 font-mono text-xs shadow glow-hover">Swift</span>
+          <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-800 font-mono text-xs shadow glow-hover">SwiftUI</span>
+          <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-800 font-mono text-xs shadow glow-hover">UIKit</span>
+          <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-800 font-mono text-xs shadow glow-hover">Figma</span>
+          <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-800 font-mono text-xs shadow glow-hover">Flutter</span>
+          <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-800 font-mono text-xs shadow glow-hover">App Optimization</span>
+        </div>
+        <div class="flex gap-4 justify-center md:justify-start">
+          <a href="#projects" class="px-6 py-2 rounded-full bg-teal-600 text-white font-bold shadow hover:bg-blue-800 transition glow-hover">See Projects</a>
+          <a href="https://example.com/resume.pdf" class="px-6 py-2 rounded-full border-2 border-teal-600 text-blue-800 font-bold shadow hover:bg-teal-600 hover:text-white transition glow-hover">Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-24">
+    <div class="max-w-4xl mx-auto glass px-10 py-12 fade-in-up">
+      <h2 class="text-4xl font-bold text-blue-800 neon mb-6 text-center">About Me</h2>
+      <div class="flex flex-col md:flex-row gap-10">
+        <div class="md:w-2/3">
+          <p class="text-lg text-gray-700 mb-4">I’m a creative iOS developer with a knack for blending <span class="font-semibold text-blue-800">technology</span> and <span class="font-semibold text-blue-800">design</span>. My focus is on building apps that are not just functional, but also beautiful and intuitive.</p>
+          <p class="text-lg text-gray-700 mb-4">I believe in strong communication and collaboration, ensuring every project aligns with user needs and business goals. My toolbox includes Swift, SwiftUI, Figma, and a passion for pixel-perfect details.</p>
+        </div>
+        <div class="md:w-1/3 flex flex-col justify-center">
+          <div class="bg-blue-50 rounded-xl p-6 shadow glow-hover">
+            <h3 class="text-xl font-semibold text-teal-600 mb-2">Core Strengths</h3>
+            <ul class="space-y-2 text-gray-700">
+              <li>🚀 Swift & SwiftUI Mastery</li>
+              <li>🎨 UI/UX Design (Figma, Sketch)</li>
+              <li>🤝 Team Collaboration</li>
+              <li>⚡ App Performance</li>
+              <li>🧩 Problem Solving</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="py-24">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-blue-800 neon mb-12 text-center">Skills</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="glass p-6 text-center glow-hover fade-in-up">
+          <div class="text-4xl mb-2">📱</div>
+          <h3 class="text-xl font-semibold text-teal-600 mb-1">iOS Development</h3>
+          <p class="text-gray-700 text-sm">Swift, SwiftUI, UIKit, Combine, CoreData</p>
+        </div>
+        <div class="glass p-6 text-center glow-hover fade-in-up">
+          <div class="text-4xl mb-2">🎨</div>
+          <h3 class="text-xl font-semibold text-teal-600 mb-1">UI/UX Design</h3>
+          <p class="text-gray-700 text-sm">Figma, Sketch, Prototyping, Animation</p>
+        </div>
+        <div class="glass p-6 text-center glow-hover fade-in-up">
+          <div class="text-4xl mb-2">🔗</div>
+          <h3 class="text-xl font-semibold text-teal-600 mb-1">Collaboration</h3>
+          <p class="text-gray-700 text-sm">Agile, Git, Communication, Mentoring</p>
+        </div>
+        <div class="glass p-6 text-center glow-hover fade-in-up">
+          <div class="text-4xl mb-2">⚡</div>
+          <h3 class="text-xl font-semibold text-teal-600 mb-1">Optimization</h3>
+          <p class="text-gray-700 text-sm">Performance, Accessibility, Testing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="py-24 bg-blue-50/60">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-blue-800 neon mb-12 text-center">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="glass p-6 flex flex-col items-center glow-hover fade-in-up group transition">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/be/e2/ed/bee2ed9a-099f-8202-91cf-5a2b0dba47cf/AppIcon-0-0-1x_U007emarketing-0-5-0-sRGB-85-220.png/1024x1024bb.png"
+               alt="Zoobiz"
+               class="w-20 h-20 rounded-xl mb-4 shadow-lg group-hover:scale-110 transition" />
+          <h3 class="text-lg font-bold text-teal-600 mb-1">Zoobiz</h3>
+          <p class="text-gray-700 text-sm mb-4">Business networking app with a sleek, user-friendly interface.</p>
+          <a href="https://apps.apple.com/in/app/zoobiz/id1550560836"
+             class="px-4 py-2 bg-teal-600 text-white rounded-full font-semibold shadow hover:bg-blue-800 transition glow-hover">View</a>
+        </div>
+        <div class="glass p-6 flex flex-col items-center glow-hover fade-in-up group transition">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/44/c6/44/44c64402-e86c-3754-9dee-7a21147bda93/AppIcon-0-0-1x_U007emarketing-0-7-0-sRGB-85-220.png/1024x1024bb.png"
+               alt="FOSTTA"
+               class="w-20 h-20 rounded-xl mb-4 shadow-lg group-hover:scale-110 transition" />
+          <h3 class="text-lg font-bold text-teal-600 mb-1">FOSTTA</h3>
+          <p class="text-gray-700 text-sm mb-4">Community forum app with engaging UI and smooth navigation.</p>
+          <a href="https://apps.apple.com/in/app/fostta-forum/id6670242256"
+             class="px-4 py-2 bg-teal-600 text-white rounded-full font-semibold shadow hover:bg-blue-800 transition glow-hover">View</a>
+        </div>
+        <div class="glass p-6 flex flex-col items-center glow-hover fade-in-up group transition">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2a/87/90/2a879064-1582-4a17-c322-ec0ff3882f03/AppIcon-0-0-1x_U007ephone-0-1-0-sRGB-85-220.png/1024x1024bb.png"
+               alt="Myco"
+               class="w-20 h-20 rounded-xl mb-4 shadow-lg group-hover:scale-110 transition" />
+          <h3 class="text-lg font-bold text-teal-600 mb-1">Myco</h3>
+          <p class="text-gray-700 text-sm mb-4">Modern UI for business management on iPhone.</p>
+          <a href="https://apps.apple.com/in/app/myco-your-business-app/id1570587985"
+             class="px-4 py-2 bg-teal-600 text-white rounded-full font-semibold shadow hover:bg-blue-800 transition glow-hover">View</a>
+        </div>
+        <div class="glass p-6 flex flex-col items-center glow-hover fade-in-up group transition">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/22/bf/f8/22bff832-9304-5477-39a1-a26313e5c1a1/AppIcon-0-0-1x_U007emarketing-0-7-0-0-sRGB-85-220.png/1024x1024bb.png"
+               alt="My Association"
+               class="w-20 h-20 rounded-xl mb-4 shadow-lg group-hover:scale-110 transition" />
+          <h3 class="text-lg font-bold text-teal-600 mb-1">My Association</h3>
+          <p class="text-gray-700 text-sm mb-4">Intuitive design for association management.</p>
+          <a href="https://apps.apple.com/in/app/my-association-app/id1565765469"
+             class="px-4 py-2 bg-teal-600 text-white rounded-full font-semibold shadow hover:bg-blue-800 transition glow-hover">View</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section id="education" class="py-24">
+    <div class="max-w-4xl mx-auto glass px-10 py-12 fade-in-up">
+      <h2 class="text-4xl font-bold text-blue-800 neon mb-8 text-center">Education</h2>
+      <div class="space-y-6">
+        <div class="bg-blue-100/80 rounded-xl p-6 shadow glow-hover">
+          <h3 class="text-xl font-bold text-teal-600 mb-1">B.Tech in Computer Science</h3>
+          <div class="text-gray-700">XYZ University, 2018-2022</div>
+          <div class="text-gray-600 text-sm">CGPA: 8.5/10</div>
+        </div>
+        <div class="bg-blue-100/80 rounded-xl p-6 shadow glow-hover">
+          <h3 class="text-xl font-bold text-teal-600 mb-1">Senior High School (XII)</h3>
+          <div class="text-gray-700">ABC Senior Secondary School, 2016-2018</div>
+          <div class="text-gray-600 text-sm">Percentage: 92%</div>
+        </div>
+        <div class="bg-blue-100/80 rounded-xl p-6 shadow glow-hover">
+          <h3 class="text-xl font-bold text-teal-600 mb-1">High School (X)</h3>
+          <div class="text-gray-700">ABC High School, 2014-2016</div>
+          <div class="text-gray-600 text-sm">Percentage: 95%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES & LEARNING SECTION -->
+  <section id="courses" class="py-24 bg-blue-50/60">
+    <div class="max-w-4xl mx-auto glass px-10 py-12 fade-in-up">
+      <h2 class="text-4xl font-bold text-blue-800 neon mb-8 text-center">Courses & Current Learning</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white/90 rounded-xl p-6 shadow glow-hover">
+          <h3 class="text-xl font-semibold text-teal-600 mb-2">iOS Development with SwiftUI</h3>
+          <div class="text-gray-700 mb-1">Mastered building modern iOS apps using SwiftUI.</div>
+          <div class="text-gray-600 text-sm">Completed: June 2023</div>
+        </div>
+        <div class="bg-white/90 rounded-xl p-6 shadow glow-hover">
+          <h3 class="text-xl font-semibold text-teal-600 mb-2">Advanced UI/UX Design with Figma</h3>
+          <div class="text-gray-700 mb-1">Learned advanced techniques for intuitive UI design.</div>
+          <div class="text-gray-600 text-sm">Completed: March 2024</div>
+        </div>
+        <div class="bg-white/90 rounded-xl p-6 shadow glow-hover md:col-span-2">
+          <h3 class="text-xl font-semibold text-teal-600 mb-2">Currently Learning: Flutter</h3>
+          <div class="text-gray-700 mb-1">Exploring Flutter for cross-platform apps with robust UI and Firebase integration.</div>
+          <div class="text-gray-600 text-sm">Working on a task management demo app.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-24">
+    <div class="max-w-3xl mx-auto glass px-10 py-12 fade-in-up text-center">
+      <h2 class="text-4xl font-bold text-blue-800 neon mb-6">Let's Connect</h2>
+      <p class="text-lg text-gray-700 mb-8">Want to collaborate or know more about my work? Reach out via email or connect on social platforms!</p>
+      <div class="flex justify-center gap-8 mb-8">
+        <a href="https://linkedin.com" class="text-blue-700 hover:text-teal-600 text-3xl glow-hover transition" title="LinkedIn">
+          <svg class="w-8 h-8 inline" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+        </a>
+        <a href="https://github.com" class="text-blue-700 hover:text-teal-600 text-3xl glow-hover transition" title="GitHub">
+          <svg class="w-8 h-8 inline" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1-2.66-.1-.25-.45-1.26.1-2.63 0 0 .84-.27 2.75 1.02A9.58 9.58 0 0112 6.8c.85.04 1.71.25 2.51.74 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.38.1 2.63.62.66 1 1.55 1 2.66 0 3.83-2.34 4.66-4.56 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.17 22 16.42 22 12A10 10 0 0012 2z"/></svg>
+        </a>
+        <a href="mailto:your-email@example.com" class="text-blue-700 hover:text-teal-600 text-3xl glow-hover transition" title="Email">
+          <svg class="w-8 h-8 inline" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+        </a>
+      </div>
+      <a href="mailto:your-email@example.com" class="px-8 py-3 bg-teal-600 text-white rounded-full font-bold shadow-lg hover:bg-blue-800 transition glow-hover text-lg">Send Message</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-blue-800 text-white py-6 text-center mt-12">
+    <p class="tracking-wide">&copy; 2025 Dhruv CHPL. All rights reserved.</p>
+  </footer>
+</body>
+</html>
